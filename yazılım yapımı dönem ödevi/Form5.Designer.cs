@@ -34,8 +34,6 @@ namespace yazılım_yapımı_dönem_ödevi
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button4
@@ -82,31 +80,11 @@ namespace yazılım_yapımı_dönem_ödevi
             this.label2.TabIndex = 13;
             this.label2.Text = "Sorumlu Kullanıcı adı :";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(213, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 17);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "labelfwqgw4gwe4gg";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(126, 73);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(232, 17);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "labelfwqgw4gwe4ggrfhsdhrtdherher";
-            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -126,7 +104,5 @@ namespace yazılım_yapımı_dönem_ödevi
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
     }
 }

@@ -152,7 +152,7 @@ namespace yazılım_yapımı_dönem_ödevi
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(436, 472);
+            this.radioButton2.Location = new System.Drawing.Point(436, 329);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(110, 21);
             this.radioButton2.TabIndex = 11;
@@ -174,7 +174,7 @@ namespace yazılım_yapımı_dönem_ödevi
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(436, 328);
+            this.radioButton4.Location = new System.Drawing.Point(436, 478);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(110, 21);
             this.radioButton4.TabIndex = 13;

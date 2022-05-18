@@ -22,6 +22,8 @@ namespace yazılım_yapımı_dönem_ödevi
         int sorusayaci = 0;
         int saniye = 60;
         int dakika = 10;
+        int dogrusayaci = 0;
+        char ogrencicevap = ' '; char dogrucevap = ' ';
         private void Form2_Load(object sender, EventArgs e)
         {
             timer1.Start();
@@ -47,6 +49,12 @@ namespace yazılım_yapımı_dönem_ödevi
         
         private void button1_Click(object sender, EventArgs e)
         {
+            if (radioButton1.Checked) ogrencicevap = 'A';
+            if (radioButton2.Checked) ogrencicevap = 'B';
+            if (radioButton3.Checked) ogrencicevap = 'C';
+            if (radioButton4.Checked) ogrencicevap = 'D';
+            if (dogrucevap == ogrencicevap) dogrusayaci++;
+
             radioButton1.Checked = false;
             radioButton2.Checked = false;
             radioButton3.Checked = false;
@@ -66,6 +74,7 @@ namespace yazılım_yapımı_dönem_ödevi
                         label3.Text = soruyazisi = Convert.ToString(oku[3]); // cevap b
                         label4.Text = soruyazisi = Convert.ToString(oku[4]); // cevap c
                         label5.Text = soruyazisi = Convert.ToString(oku[5]); // cevap d
+                        dogrucevap= Convert.ToChar(oku[6]);
                     }
                     baglanti.Close();
                     //MessageBox.Show(soruyazisi);
@@ -73,7 +82,10 @@ namespace yazılım_yapımı_dönem_ödevi
             }
             else
             {
-                MessageBox.Show("Sınav bitmiştir.");
+                int yanliscevapsayisi = 10 - dogrusayaci;
+                MessageBox.Show("Sınav bitmiştir. \n Dogru cevap sayınız: "+dogrusayaci+
+                    "\n Yanlış cevap Sayınız: "+(10-dogrusayaci)+"\n Puanınız: "+dogrusayaci*10);
+
                 this.Close();
             }
         }

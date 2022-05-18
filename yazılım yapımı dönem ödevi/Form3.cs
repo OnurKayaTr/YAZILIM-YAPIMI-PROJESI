@@ -58,5 +58,10 @@ namespace yazılım_yapımı_dönem_ödevi
             textBox2.Text = listView1.SelectedItems[0].SubItems[2].Text;
 
         }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

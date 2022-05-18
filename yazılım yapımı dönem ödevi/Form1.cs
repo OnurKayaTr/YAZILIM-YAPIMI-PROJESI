@@ -68,5 +68,11 @@ namespace yazılım_yapımı_dönem_ödevi
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form6 frtt = new Form6();
+            frtt.Show();
+        }
     }
 }
